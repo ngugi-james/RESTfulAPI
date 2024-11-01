@@ -1,0 +1,51 @@
+### Retrieve a list of all students
+GET http://127.0.0.1:5000/students
+Content-Type: application/json
+
+###
+
+### Retrieve details of a student by ID (replace {id} with an actual ID)
+GET http://127.0.0.1:5000/students/1
+Content-Type: application/json
+
+###
+
+### Add a new student (Student 1)
+POST http://127.0.0.1:5000/students
+Content-Type: application/json
+
+{
+    "name": "Michael Johnson",
+    "grade": "A",
+    "email": "michael.johnson@example.com"
+}
+
+###
+
+### Add a new student (Student 2)
+POST http://127.0.0.1:5000/students
+Content-Type: application/json
+
+{
+    "name": "Emily Davis",
+    "grade": "B",
+    "email": "emily.davis@example.com"
+}
+
+###
+
+### Update the first student by ID (Student 1, ID 1)
+PUT http://127.0.0.1:5000/students/1
+Content-Type: application/json
+
+{
+    "name": "Johnathan Doe",
+    "grade": "A+",
+    "email": "johnathandoe@example.com"
+}
+
+###
+
+### Delete the second student by ID (Student 2, ID 2)
+DELETE http://127.0.0.1:5000/students/2
+Content-Type: application/json
